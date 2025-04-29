@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: proyecto-final
+    restart: unless-stopped
+    working_dir: /var/www/html/proyecto-final
+    volumes:
+      - .:/var/www/html/proyecto-final
+    ports:
+      - "8000:80"
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:latest
+    container_name: mariadbproyecto
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: proyecto-final
+      MYSQL_USER: cursolaravel
+      MYSQL_PASSWORD: cursolaravel
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+volumes:
+  mariadb_data:
+
