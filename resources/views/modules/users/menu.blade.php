@@ -12,34 +12,34 @@
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
-     
+
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li>
           <a href="{{ route('start') }}">
-            <i class="fa fa-home"></i> <span>Inicio</span>            
-          </a>        
+            <i class="fa fa-home"></i> <span>Inicio</span>
+          </a>
         </li>
         <li>
           <a href="{{ url('users') }}">
             <i class="fa fa-users"></i> <span>Usuarios</span>
-          </a>        
+          </a>
         </li>
         <li>
           <a href="{{ url('branches') }}">
-            <i class="fa fa-home"></i> <span>Sucursales</span>            
-          </a>        
+            <i class="fa fa-building"></i> <span>Sucursales</span>
+          </a>
         </li>
         <li>
           <a href="{{ url('categories') }}">
-            <i class="fa fa-home"></i> <span>Categorías</span>            
-          </a>        
+            <i class="fa fa-th"></i> <span>Categorías</span>
+          </a>
         </li>
         <li>
           <a href="{{ url('products') }}">
-            <i class="fa fa-home"></i> <span>Productos</span>            
-          </a>        
+            <i class="fa fa-cubes"></i> <span>Productos</span>
+          </a>
         </li>
       </ul>
     </section>

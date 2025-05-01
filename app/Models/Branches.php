@@ -7,7 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Branches extends Model
 {
     protected $fillable = [
-        'name' ,
-        'state'
-    ]
+        'name',
+        'state',
+    ];
+
 }

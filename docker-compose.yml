@@ -19,7 +19,7 @@ services:
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: proyecto-final
+      MYSQL_DATABASE: proyectofinal
       MYSQL_USER: cursolaravel
       MYSQL_PASSWORD: cursolaravel
     ports:

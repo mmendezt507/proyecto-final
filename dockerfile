@@ -17,6 +17,8 @@ RUN apt-get update && apt-get install -y \
 
 # Instalar Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+#
+RUN docker-php-ext-install pdo pdo_mysql
 
 # Habilitar mod_rewrite de Apache
 RUN a2enmod rewrite
@@ -34,4 +36,6 @@ EXPOSE 8000
 
 # Comando de inicio
 CMD ["apache2-foreground"]
+
+
 

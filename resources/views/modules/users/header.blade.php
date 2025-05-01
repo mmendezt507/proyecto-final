@@ -1,16 +1,17 @@
 <header class="main-header">
     <!-- Logo -->
-    <a href="{{ url('/content') }}" class="logo">
+    <a href="{{ url('content') }}" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini">
-      <img src="{{url('storage/plantilla/logo-blanco.png')}}" class="img-responsive" style="padding: 10px">  
-      <b>A</b>LT
+        <img src="{{url('storage/plantilla/icono-blanco.png')}}" class="img-responsive" style="padding: 10px">
       </span>
-      
-      
+
+
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
-      
+      <span class="logo-lg">
+        <img src="{{url('storage/plantilla/logo-blanco-lineal.png')}}" class="img-responsive" style="padding: 10px">
+      </span>
+
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -38,8 +39,8 @@
                   <a href="#" class="btn btn-primary btn-flat">Mis datos</a>
                 </div>
                 <div class="pull-right">
-                  <a href="{{ route('logout') }}" 
-                  onclick="event.preventDefault(); document.getElementById('logout-form').submit();" 
+                  <a href="{{ route('logout') }}"
+                  onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
                   class="btn btn-danger btn-flat">Salir</a>
                 </div>
                 <form action="{{ route('logout') }}" method="POST" id="logout-form">

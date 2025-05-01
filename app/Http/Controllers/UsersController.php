@@ -12,18 +12,18 @@ class UsersController extends Controller
     /**
      * Display a listing of the resource.
      */
-    
+
     public function firstUser()
     {
         User::create([
-            'name' => 'Gonzalo Valdovinos',
-            'email' => 'gvaldovi@gmail.com',
+            'name' => 'Mariana Mendez',
+            'email' => 'mmendezt507@gmail.com',
             'password' => Hash::make('12345678'),
             'photo' => '',
             'status' => 1,
             'id_branch' => 0,
-            'role' => 'Administrador', 
-            'last_login' => '',            
+            'role' => 'Administrador',
+            'last_login' => '',
         ]);
 
         return 'User created';
