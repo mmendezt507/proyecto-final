@@ -2,8 +2,11 @@
     <!-- Logo -->
     <a href="{{ url('/content') }}" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
-      <img src="{{url('storage/plantilla/logo-blanco-lineal.png')}}" class="img-responsive" style="padding: 10px">
+      <span class="logo-mini">
+      <img src="{{url('storage/plantilla/logo-blanco.png')}}" class="img-responsive" style="padding: 10px">  
+      <b>A</b>LT
+      </span>
+      
       
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><b>Admin</b>LTE</span>

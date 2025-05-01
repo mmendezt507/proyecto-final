@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BranchesController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,3 +16,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/first-user', [UsersController::class, 'firstUser']);
+//Sucursales
+Route::get('/branches',[BranchesController::class, 'index'])->name('branches.index');
+Route::post('/branches',[BranchesController::class, 'store'])->name('branches.store');

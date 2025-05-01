@@ -11,25 +11,7 @@
                     <button class="btn btn-primary" data-toggle="modal" data-target="modalAgregarSucursal">Nueva sucursal</button>
                 </div>
                 <div class="box-body">
-                    <table class="table table-bordered table-striped dt-responsive table-hover">
-                        <thead>
-                            <tr>
-                                <th>Id</th>
-                                <th>Sucursal</th>
-                                <th>Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <td>{{ $branch->id }}</td>
-                            <td>{{ $branch->name }}</td>
-                            <td>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-warning" data-dismiss="modal"><i></i></button>
-                                    <button type="submit" class="btn btn-danger">Guardar sucursal</button>
-                                </div>
-                            </td>
-                        </tbody>
-                    </table>
+                    
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="modalAgregarSucursal" tabindex="-1" role="dialog" aria-labelledby="modalAgregarSucursalLabel" aria-hidden="true">
